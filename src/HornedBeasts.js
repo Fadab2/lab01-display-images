@@ -1,16 +1,7 @@
 import React, { Component } from 'react'
-import {
-    MDBRow,
-    MDBCol,
-    MDBContainer
-  } from "mdbreact";
+import Card from 'react-bootstrap/Card'
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-  crossorigin="anonymous"
-/>
+
 class HornedBeasts extends Component {
 
     constructor(props) {
@@ -29,11 +20,24 @@ class HornedBeasts extends Component {
     render() {
         return (
             <>
-                <h2>{this.props.title}</h2>
+                <Card style={{ width: '40rem' }}>
+
+                    <Card.Img variant="top" src={this.props.imageUrl} onClick={this.handleClick} title={this.props.title} alt={this.props.keywords} />
+                    <Card.Body>
+                        <Card.Title>{this.props.title}</Card.Title>
+                        <Card.Text>
+                            {this.props.description}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <small className="text-muted">💓 : {this.state.countOfFavorites}</small>
+                    </Card.Footer>
+                </Card>
+                {/* <h2>{this.props.title}</h2>
 
                 <img src={this.props.imageUrl} fluid onClick={this.handleClick} title={this.props.title} alt={this.props.keywords} className='img-fluid' />
                 <p>💓 : {this.state.countOfFavorites}</p>
-                <p>{this.props.description}</p>
+                <p>{this.props.description}</p> */}
             </>
         )
     }
