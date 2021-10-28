@@ -5,7 +5,7 @@ The applications allows filtering the images depending on the number horns.
 The applications allows choosing your favorite image.
 
 Number and name of feature:
-__Feature #1: Display images__
+__Feature: Display images__
 
 Estimate of time needed to complete: __1hrs__
 
@@ -15,10 +15,10 @@ Finish time: __2:25pm__
 
 Actual time needed to complete: _35 Minutes_
 
-==================================
+===================================
 
 Number and name of feature:
-__Feature #2: Allow users to vote for their favorite beast__
+__Feature: Allow users to vote for their favorite beast__
 
 Estimate of time needed to complete: __1hrs__
 
@@ -29,7 +29,7 @@ Finish time: __3:35pm__
 Actual time needed to complete: _1:05_
 =====================================
 Number and name of feature:
-__Feature 3: Bootstrap__
+__Feature: Bootstrap__
 
 Estimate of time needed to complete: __1hrs__
 
@@ -39,14 +39,14 @@ Finish time: __5:00pm__
 
 Actual time needed to complete: _1:10_
 
-==============================
+=======================================
 Number and name of feature:
-__Feature #1: Display a Modal__
+__Feature: Display a Modal__
 
 Estimate of time needed to complete: __3__
 
 Start time: _3:00pm_
 
-Finish time: ____
+Finish time: _6:00pm_
 
-Actual time needed to complete: __
+Actual time needed to complete: _3_
