@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react'
-import Modal from 'react-bootstrap/Modal';
 import images from './Assets/data.json';
 import Header from './Header'
 import Footer from './Footer'
@@ -22,13 +21,13 @@ export default class App extends Component {
   }
 
   showImage = (title) => {
-        const selectedBeast = images.find(beast => beast.title === title);
+    const selectedBeast = images.find(beast => beast.title === title);
 
-        this.setState({
-            show: true,
-            selectedBeast: selectedBeast
-        })
-    }
+    this.setState({
+      show: true,
+      selectedBeast: selectedBeast
+    })
+  }
 
   render() {
     return (
@@ -36,7 +35,7 @@ export default class App extends Component {
         <Header />
         <Main images={images} showImage={this.showImage} />
         <Footer />
-        <SelectedBeast show={this.state.show} hideImage={this.hideImage} selectedBeast={this.state.selectedBeast}/>
+        <SelectedBeast show={this.state.show} hideImage={this.hideImage} selectedBeast={this.state.selectedBeast} />
       </div>
     )
   }
