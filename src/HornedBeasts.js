@@ -12,15 +12,14 @@ class HornedBeasts extends Component {
     }
 
     handleClick = () => {
-        console.log('I was favorited');
         this.setState({ countOfFavorites: this.state.countOfFavorites + 1 });
+        this.props.showImage(this.props.title);
     }
-
 
     render() {
         return (
             <>
-                <Card style={{ width: '40rem' }}>
+                <Card style={{ width: '18rem' }}>
 
                     <Card.Img variant="top" src={this.props.imageUrl} onClick={this.handleClick} title={this.props.title} alt={this.props.keywords} />
                     <Card.Body>
@@ -30,14 +29,10 @@ class HornedBeasts extends Component {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted">💓 : {this.state.countOfFavorites}</small>
+                        <small className="text-muted" onClick={this.handleClick} onMouseOver={this.handleHover}>💓 : {this.state.countOfFavorites}</small>
                     </Card.Footer>
                 </Card>
-                {/* <h2>{this.props.title}</h2>
 
-                <img src={this.props.imageUrl} fluid onClick={this.handleClick} title={this.props.title} alt={this.props.keywords} className='img-fluid' />
-                <p>💓 : {this.state.countOfFavorites}</p>
-                <p>{this.props.description}</p> */}
             </>
         )
     }
